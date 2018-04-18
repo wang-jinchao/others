@@ -12,7 +12,8 @@ Github初始配置:
     git commit -m "first commit"
     git remote add origin "SSH链接"
     git push -u origin master
----
+
+
 在Github上删除某个Repository中的某个文件夹:  
 
     git rm -r --cached some-directory
