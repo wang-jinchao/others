@@ -33,8 +33,8 @@ functools.partial(tf.data.TFRecordDataset, buffer_size=8 * 1000 * 1000),
 AttributeError: 'module' object has no attribute 'data'
 
 
-virtualenv --no-site-packages p2tf1.4
-pip install --upgrade tensorflow-gpu==1.7
+    virtualenv --no-site-packages p2tf1.4
+    pip install --upgrade tensorflow-gpu==1.7
 
 <pre>
 <em>#cuda 版本:</em>
@@ -64,4 +64,24 @@ Release:        7.3.1611
 Codename:       Core
 </pre>
 
+<pre>
+[root@gpu1:/usr/local]
+# cat /proc/driver/nvidia/version
+NVRM version: NVIDIA UNIX x86_64 Kernel Module  384.98  Thu Oct 26 15:16:01 PDT 2017
+GCC version:  gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC)
 
+
+
+
+</pre>
+
+|Version|CPU/GPU|Python Version|Compiler|Build Tools|cuDNN|CUDA|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|tensorflow_gpu-1.7.0|GPU|2.7|3.3-3.6|	GCC 4.8|Bazel 0.9.0|7|9|
+
+
+检测cuda是否安装成功:  
+
+    cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery 
+    make -j4  
+    sudo ./deviceQuery  
