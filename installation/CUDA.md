@@ -1,4 +1,4 @@
-#CUDA cuDNN  
+#CUDA--cuDNN  
 ===
 
 |Version|CPU/GPU|Python Version|Compiler|Build Tools|cuDNN|CUDA|
@@ -49,3 +49,13 @@ GCC version:  gcc 版本 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC)
     cd /usr/local/cuda-8.0/samples/1_Utilities/deviceQuery 
     make -j4  
     sudo ./deviceQuery  
+
+
+-----
+    https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=CentOS&target_version=7&target_type=runfilelocal
+    [wangjinchao@gpu1 ~]$ wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run
+
+  ###  Base Installer	
+    Installation Instructions:
+    Run `sudo sh cuda_9.0.176_384.81_linux.run`
+    Follow the command-line prompts
