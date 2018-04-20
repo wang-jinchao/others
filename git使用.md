@@ -1,4 +1,4 @@
-Github初始配置:  
+### Github初始配置:  
     
     ssh-keygen -t rsa -C "your_email@youremail.com"
     ssh -T git@github.com
@@ -14,7 +14,7 @@ Github初始配置:
     git push -u origin master
 
 
-在Github上删除某个Repository中的某个文件夹:  
+### 在Github上删除某个Repository中的某个文件夹:  
 
     git rm -r --cached some-directory
     git commit -m "Remove the now ignored directory some-directory"
