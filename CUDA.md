@@ -72,9 +72,9 @@ Set Path
 </pre>
 
 
-这样Cuda8 和Cuda9 就同时安装在服务器上了； 你可以在在shell文件中切换，也可以修改/usr/local/cuda的符号链接
+这样Cuda8和Cuda9就同时安装在服务器上了；你可以在在shell文件中切换，也可以修改/usr/local/cuda的符号链接
 
-  
+
 
 
 ===========
@@ -98,3 +98,39 @@ To install the driver using this installer, run the following command, replacing
     sudo <CudaInstaller>.run -silent -driver
 
 Logfile is /tmp/cuda_install_2955.log
+
+
+## cuDNN9.0.5
+    sudo cp cuda/include/cudnn.h /media/cuda-9.0/include            #复制头文件
+    sudo cp cuda/lib64/libcudnn* /media/cuda-9.0/lib64              #复制动态链接库
+    sudo chmod a+r /media/cuda-9.0/include/cudnn.h /media/cuda-9.0/lib64/libcudnn*
+
+
+## 添加环境变量  
+
+    gedit .bashrc
+    source .bashrc
+
+    export PATH=$PATH:/usr/local/cuda/bin  
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64  
+    export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda/lib64 
+  
+>多个cuda版本之间进行切换
+将~/.bashrc或~/.zshrc下与cuda相关的路径都改为/usr/local/cuda/　而不使用　/usr/local/cuda-8.0/或/usr/local/cuda-9.0/。
+
+\# 在切换cuda版本时  
+
+    rm -rf /usr/local/cuda#删除之前创建的软链接
+    sudo ln -s /media/cuda-9.0 /usr/local/cuda
+    nvcc --version #查看当前 cuda 版本
+
+>nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2016 NVIDIA Corporation
+Built on Mon_Jan_23_12:24:11_CST_2017
+Cuda compilation tools, release 8.0, V8.0.62
+
+\# cuda8.0切换到cuda9.0  
+
+    rm -rf /usr/local/cuda
+    sudo ln -s /usr/local/cuda-9.0 /usr/local/cuda
+    nvcc --version
