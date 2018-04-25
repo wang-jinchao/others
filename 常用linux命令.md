@@ -10,7 +10,9 @@
 6. \>
 7. tree -L 2
 8. top  
+http://noahsnail.com/2017/02/07/2017-2-7-Linux%E7%BB%9F%E8%AE%A1%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E6%95%B0%E7%9B%AE/
 
+http://www.cnblogs.com/eoiioe/archive/2008/09/20/1294681.html
 
 ### Linux环境变量  
 #### 分类：

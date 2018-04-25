@@ -1,0 +1,39 @@
+云栖社区2017中国开发者调查报告
+
+Web开发:
+    Discuz!与Wordpress被Web开发者追捧
+
+租用服务器 云服务部署服务器
+
+超过1T的日产数据量是谈大数据的一个基准线，核心数据存储需要组织，才能发
+挥出数据的更大价值
+
+
+尽管人们都认为大数据和NoSQL数据库是天作之合，而关系型数据库则被打上OUT的标签，但在调研中，大多数
+中国开发者更倾向将大数据存在关系型数据库当中，其次则是Hadoop HDFS离线存储，而NAS存储仅为9.7%。首先，
+中国多数企业的数据量还比较小，关系型数据库还能够承载这样的数据储量；其次，对数据查询、检索更高效的诉求以
+及对于数据安全性的考量，关系型数据库的优势依然明显
+
+Hadoop因⽣态体系完整受⻘睐，Spark则因解决⼀揽⼦问题⽽受宠
+作为开源分布式大数据计算平台的鼻祖， Hadoop生态现已提供了一套完整的存储和计算体系，也是时下装机量最
+高的计算框架，其成熟与丰富基本上可以满足企业的大部分应用场景； Spark能迎头追赶Hadoop主要是其解决了一揽
+子的问题，比如 SQL、机器学习、流处理、图等，而更简单的API无疑加速了其追赶速度，此外在一个内存越来越便宜
+的时代，基于内存带来的性能提升让Spark不火都难！Hadoop与Spark，老将与新贵，交相辉映。
+
+
+Deep Learning Framework 
+Caffe
+Caffe2
+Chainer
+CNTK(Microsoft Cognitive Toolkit)
+Deeplearning4j
+Keras
+MATLAB
+MxNet
+TensorFlow
+Theano
+Torch/PyTorch
+
+
+
+
