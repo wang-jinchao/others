@@ -114,6 +114,11 @@ Logfile is /tmp/cuda_install_2955.log
     export PATH=$PATH:/usr/local/cuda/bin  
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64  
     export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda/lib64 
+
+    export PATH=$PATH:/usr/local/cuda/bin  
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/media/wangjinchao/cuDNN-6.0/cuda/lib64  
+    export LIBRARY_PATH=$LIBRARY_PATH:/media/wangjinchao/cuDNN-6.0/cuda/lib64
+  
   
 >多个cuda版本之间进行切换
 将~/.bashrc或~/.zshrc下与cuda相关的路径都改为/usr/local/cuda/　而不使用　/usr/local/cuda-8.0/或/usr/local/cuda-9.0/。
@@ -132,5 +137,5 @@ Cuda compilation tools, release 8.0, V8.0.62
 \# cuda9.0切换到cuda8.0  
 
     rm -rf /usr/local/cuda
-    sudo ln -s /usr/local/cuda-9.0 /usr/local/cuda
+    sudo ln -s /usr/local/cuda-8.0 /usr/local/cuda
     nvcc --version
