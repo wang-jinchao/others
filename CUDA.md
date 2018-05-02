@@ -76,7 +76,6 @@ tar zxvf
 
 
 
-
 ===========
 = Summary =
 ===========
@@ -125,7 +124,7 @@ Logfile is /tmp/cuda_install_2955.log
 
 \# \# cuda8.0切换到cuda9.0  
 
-    rm -rf /usr/local/cuda#删除之前创建的软链接
+    rm -rf /usr/local/cuda #删除之前创建的软链接
     sudo ln -s /media/cuda-9.0 /usr/local/cuda
     nvcc --version #查看当前 cuda 版本
 
