@@ -70,7 +70,7 @@ Set Path
     Follow the command-line prompts
 
 </pre>
-
+tar zxvf 
 
 这样Cuda8和Cuda9就同时安装在服务器上了；你可以在在shell文件中切换，也可以修改/usr/local/cuda的符号链接
 
@@ -118,7 +118,7 @@ Logfile is /tmp/cuda_install_2955.log
 >多个cuda版本之间进行切换
 将~/.bashrc或~/.zshrc下与cuda相关的路径都改为/usr/local/cuda/　而不使用　/usr/local/cuda-8.0/或/usr/local/cuda-9.0/。
 
-\# 在切换cuda版本时  
+\# \# cuda8.0切换到cuda9.0  
 
     rm -rf /usr/local/cuda#删除之前创建的软链接
     sudo ln -s /media/cuda-9.0 /usr/local/cuda
@@ -129,7 +129,7 @@ Copyright (c) 2005-2016 NVIDIA Corporation
 Built on Mon_Jan_23_12:24:11_CST_2017
 Cuda compilation tools, release 8.0, V8.0.62
 
-\# cuda8.0切换到cuda9.0  
+\# cuda9.0切换到cuda8.0  
 
     rm -rf /usr/local/cuda
     sudo ln -s /usr/local/cuda-9.0 /usr/local/cuda
